@@ -1,0 +1,35 @@
+
+.textarea-container {
+    margin: auto;
+    width: 60%;
+}
+.form-container{
+    height: 50%;
+}
+.form {
+    padding: 2rem 1rem;
+    height: 80%;
+    width: 30%;
+    border: 1px solid;
+    background-color: var( --ecomm-color-form);
+    align-items: center;
+    border: 1px solid;
+    margin: auto;
+    margin-top: 6rem;
+}
+
+.form-sub-heading {
+    margin-bottom: 1rem;
+}
+
+#primary-input {
+    margin-top: 0rem;
+}
+
+.checkbox-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3.5rem;
+    margin: auto;
+    margin-top: 1rem;
+}

@@ -1,0 +1,22 @@
+@import url("https://neos-ui.netlify.app/components/neos-ui.css");
+
+:root {
+    --ecomm-color-primary: #0000b7;
+    --ecomm-color-secondary:#ffffff;
+    --ecomm-color-border:#000000;
+    --ecomm-color-navbar:#f7fbff;
+    --ecomm-color-form:#f8f4f4;
+    --ecomm-wishlist-color:#696969;
+
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+a{
+    color: var( --ecomm-color-border);
+}

@@ -1,0 +1,71 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.ecomm-tagline{
+    height: 3rem;
+    width: 100%;
+    border: 1px solid;
+    color: var(--ecomm-color-secondary);
+    background-color: var( --ecomm-color-primary);
+    justify-content: center;
+    padding-top: 10px;
+}
+.ecomm-tagline p {
+    text-align: center;
+    height: 3rem;
+    width: 100%;
+    font-size: 1.5rem;  
+}
+#title{
+    font-size: 3.75rem;
+    
+}
+.img-container img{
+    position: relative;
+    width: 100%;
+}
+.img-container{
+    position: relative;
+}
+.brand-title{
+    font-size: 2.5rem;
+    font-weight: 600;
+    top: 30%;
+    left: 3%;
+    position: absolute;
+}
+.shop-button{
+    border: 1px solid  var( --ecomm-color-primary);
+    border-radius: 10px;
+    color: var( --ecomm-color-primary);
+    padding: 6px;
+    font-size: 1.75rem;
+    position: sticky;
+}
+
+
+
+.nav-container {
+    width: 100%;
+    background-color: var(--ecomm-color-navbar);
+    height: 6rem;
+    border: none;
+    border-bottom: 2px solid var( --ecomm-color-border);
+    margin: 0rem 0rem;
+    padding: 1rem 0rem 1rem 0rem;
+}
+.brand-name,.search-button a , .nav-links a , .nav-icons a{
+    color:  var(--ecomm-color-primary);
+}
+
+.nav-links a:hover {
+    color: var(--ecomm-color-secondary);
+    background-color: var( --ecomm-color-primary);
+}
+
+.nav-icons a:hover {
+    color: var(--ecomm-color-secondary);
+    background-color: var( --ecomm-color-primary);
+}
