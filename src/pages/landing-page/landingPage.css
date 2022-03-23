@@ -1,0 +1,87 @@
+/*css for main landing page */
+.ecomm-tagline{
+    height: 3rem;
+    width: 100%;
+    border: 1px solid;
+    color: var(--ecomm-color-secondary);
+    background-color: var( --ecomm-color-primary);
+    justify-content: center;
+    padding-top: 10px;
+}
+.ecomm-tagline p {
+    text-align: center;
+    height: 3rem;
+    width: 100%;
+    font-size: 1.5rem;  
+}
+#title{
+    font-size: 3.75rem;
+    
+}
+.img-container img{
+    position: relative;
+    width: 100%;
+}
+.img-container{
+    position: relative;
+}
+.brand-title{
+    font-size: 2.5rem;
+    font-weight: 600;
+    top: 30%;
+    left: 3%;
+    position: absolute;
+}
+.shop-button{
+    border: 1px solid  var( --ecomm-color-primary);
+    border-radius: 10px;
+    color: var( --ecomm-color-primary);
+    padding: 6px;
+    font-size: 1.75rem;
+    position: sticky;
+}
+
+
+
+/*css for product categories*/
+.product-categories-head{
+    text-align: center;  
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+.product-categories{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.product-categories img{
+    height: 15rem;
+    width: 15rem;
+    opacity: 0.7;
+}
+.men-product,.women-product,.kid-product{
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+}
+.shoe-category{
+    position: relative;
+}
+.category-text{
+    font-size: 1.5rem;
+    font-weight: 500;
+    position: absolute;
+}
+.product-categories img:hover{
+    cursor: pointer;
+}
+.category-text:hover{
+    cursor: pointer;
+}
+.shop-button:hover{
+    color: var(--ecomm-color-secondary);
+    background-color: var( --ecomm-color-primary);
+}

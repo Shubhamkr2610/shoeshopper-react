@@ -1,0 +1,35 @@
+.ecomm-wishlist-title{
+    margin-top: 1rem;
+    width: 100%;
+    border-bottom: 2px solid black;
+    color: var(--ecomm-color-primary);;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+}
+.ecomm-wishlist-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.card-vertical{
+    margin: 1rem;
+}
+.badge-dismiss{
+   color:  var(--ecomm-color-primary);
+}
+.badge-dismiss:hover{
+    color:  var(--ecomm-color-primary);
+}
+.primary-button{   
+    background-color: var(--danger-color);
+    color: var(--button-secondary-color);
+    margin: 5px 5px 0px 5px;
+    width: 50%;
+    font-size: 15px;
+    
+}
+.card-vertical-footer {
+    font-size: 1rem;
+    margin: 0rem 1rem 0rem 1rem;
+}
