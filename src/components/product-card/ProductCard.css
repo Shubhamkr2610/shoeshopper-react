@@ -1,0 +1,20 @@
+.card-vertical{
+    margin-top: 0rem;
+}
+.badge-dismiss{
+   color: var(--ecomm-wishlist-color);
+}
+.badge-dismiss:hover{
+    color:  var(--ecomm-color-primary);
+}
+.primary-button{   
+    background-color: var(--danger-color);
+    color: var(--button-secondary-color);
+    margin-top: 10px;
+    width: 40%;
+    font-size: 1rem;
+}
+.card-vertical-footer {
+    font-size: 1.25rem;
+    margin: 0rem 1rem 0rem 1rem;
+}

@@ -1,0 +1,23 @@
+.main-ecomm-container{
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+.ecomm-sidebar{
+    width: 15rem;
+    min-height: 100%;
+    border: 1px solid ;
+    box-shadow: 0 0 4px black;
+}
+.sidebar{
+    display: flex;
+    justify-content: space-around;
+    margin-left: -1.5rem;
+    margin-top: 1rem;
+}
+.category-filter{
+   text-align: left;
+   margin: 1rem 0rem 1rem 1rem;
+   display: block;
+   align-items: center;
+}
