@@ -13,19 +13,12 @@
     justify-content: space-around;
 }
 .card-vertical{
-    margin: 1rem;
-}
-.badge-dismiss{
-   color:  var(--ecomm-color-primary);
-}
-.badge-dismiss:hover{
-    color:  var(--ecomm-color-primary);
+    margin-top: 2rem;
 }
 .primary-button{   
     background-color: var(--danger-color);
     color: var(--button-secondary-color);
     margin: 5px 5px 0px 5px;
-    width: 50%;
     font-size: 15px;
     
 }

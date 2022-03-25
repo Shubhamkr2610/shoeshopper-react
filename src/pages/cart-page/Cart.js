@@ -1,11 +1,10 @@
 import React from 'react'
 import "./cart.css"
-import cartimg1 from "../../asset/nike-running.jfif"
-import cartimg2 from "../../asset/nike-zoomx.jfif"
-
+import { cartimg1, cartimg2 } from 'asset';
 export const Cart = () => {
   return (
     <>
+    <p class="ecomm-cart-title"> Your Cart</p>
      <main class="cart-page-container">
         <div class="ecomm-card-container" >
 
@@ -13,7 +12,6 @@ export const Cart = () => {
 
                 <div class="card-horizontal-container">
                     <div class="horizonal-image">
-                        {/* <img src="/assets/nike-running.jfif" alt="shoe image" class="card-horizontal-img" /> */}
                         <img src={cartimg1} alt="shoe image" class="card-horizontal-img" />
                     </div>
 
