@@ -1,20 +1,22 @@
 .card-vertical{
-    margin-top: 0rem;
+    border-radius: 4px;
 }
 .badge-dismiss{
    color: var(--ecomm-wishlist-color);
 }
 .badge-dismiss:hover{
-    color:  var(--ecomm-color-primary);
+    color:  var(--badge-color);
 }
 .primary-button{   
     background-color: var(--danger-color);
     color: var(--button-secondary-color);
-    margin-top: 10px;
-    width: 40%;
-    font-size: 1rem;
+    margin-top: 10px; 
+    width: 90%;
+    font-size: 1.25rem ;
 }
 .card-vertical-footer {
     font-size: 1.25rem;
-    margin: 0rem 1rem 0rem 1rem;
+    margin: 0rem 0rem 0rem 1rem;
+    justify-content: space-between;
+    justify-items: center;
 }

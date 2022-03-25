@@ -1,16 +1,18 @@
 .main-ecomm-container{
-    height: 100vh;
+    min-height: 100vh;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
 }
 .ecomm-sidebar{
-    width: 15rem;
+    width: 18%;
     min-height: 100%;
     border: 1px solid ;
     box-shadow: 0 0 4px black;
 }
 .sidebar{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     margin-left: -1.5rem;
     margin-top: 1rem;

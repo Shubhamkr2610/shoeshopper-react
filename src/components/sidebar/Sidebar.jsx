@@ -4,7 +4,6 @@ import './sidebar.css'
 export const Sidebar = () => {
     return (
     <>
-            
                 <aside className="ecomm-sidebar">
                     <div className="sidebar">
                         <h2>Filter</h2>

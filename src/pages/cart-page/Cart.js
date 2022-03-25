@@ -4,6 +4,7 @@ import { cartimg1, cartimg2 } from 'asset';
 export const Cart = () => {
   return (
     <>
+    <p class="ecomm-cart-title"> Your Cart</p>
      <main class="cart-page-container">
         <div class="ecomm-card-container" >
 
