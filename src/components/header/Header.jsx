@@ -6,43 +6,50 @@ export const Header = () =>{
     return(
         <>
             <div className="nav-container">
-                <nav className="nav-heading">
-                    <Link to="/" className="brand">
-                        <h1 className="brand-name">Shoe-Shoppers</h1>
+                    <Link to="/" className="ecomm-brand">
+                        <h1 className="ecomm-brand-name">Shoe-Shoppers</h1>
                     </Link>
+
                     <div className="nav-search">
                         <input type="text" className="search-input-box" placeholder=" Type to search" />
+
                         <div className="search-button">
                             <a href="#"><i className="fa fa-search"></i></a>
                         </div>
                     </div>
-                    <div className="link-container">
 
+                    <div className="ecomm-link-container">
+                        <div class="ecomm-icon mt ">
+                            <Link to="/"  className="coloring">
+                            <i class="fas fa-home badge-icon"></i>
+                            <div className="nav-icon-text">Home</div>
+                            </Link>
+                        </div> 
 
-                        <div className="nav-links">
-                            <Link to="/"><i className="fa fa-home"></i>Home</Link>
-                            <Link to="/ProductPage"  > Products</Link>
+                        <div class="ecomm-icon mt">
+                            <Link to="/Login"  className="coloring" > 
+                            <i class="fas fa-user badge-icon"><h5 class="symbol">13</h5></i>
+                            <div className="nav-icon-text">Login</div>
+                            </Link>
+                        </div>  
+
+                        <div class="ecomm-icon mt">
+                            <Link to="/Wishlist"  className="coloring">
+                            <i class="fas fa-heart badge-icon">
+                            <h5 class="symbol">2</h5></i>
+                            <div className="nav-icon-text">Wishlist</div> 
+                            </Link>
                         </div>
 
-                        <div className="nav-icons">
-                            <Link to="/Login"  > 
-                            <i className="fa fa-user"></i>
-                            <span className="nav-icon-text">Login</span>
-                            </Link>
-
-                            <Link to="/Wishlist">
-                            <i className="fa fa-heart" aria-hidden="true"></i>
-                                <span className="nav-icon-text">Wishlist</span>
-                            </Link>
-
-                            <Link to="/Cart">
-                                <i className="fa fa-shopping-cart"></i>
-                                <span className="nav-icon-text">Cart</span>
+                        <div class="ecomm-icon mt">
+                            <Link to="/Cart" className="coloring" >
+                            <i class="fas fa-shopping-cart badge-icon">
+                            <h5 class="symbol">15</h5></i>
+                            <div className="nav-icon-text">Cart</div>
                             </Link>
                         </div>
 
                     </div>
-                </nav>
             </div>
         </>
 
