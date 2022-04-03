@@ -4,13 +4,16 @@ import "./index.css"
 import App from "./App";
 import { BrowserRouter } from "react-router-dom";
 import { makeServer } from "./server";
+import { HeaderProvider } from "context/HeaderContext";
 
 // Call make Server
 makeServer();
 
 ReactDOM.render (
     <BrowserRouter>
-         <App/>
+          <HeaderProvider>
+               <App/>
+          </HeaderProvider>
     </BrowserRouter>
    , document.getElementById("root")
 )

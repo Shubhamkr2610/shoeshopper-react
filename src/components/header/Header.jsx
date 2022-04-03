@@ -1,8 +1,13 @@
+import { useHeader } from "context/HeaderContext";
 import React from "react";
 import { Link } from 'react-router-dom'
 import "./header.css"
 
 export const Header = () =>{
+
+    const {counter, cartCounter} = useHeader()
+    
+
     return(
         <>
             <div className="nav-container">
@@ -28,7 +33,7 @@ export const Header = () =>{
 
                         <div class="ecomm-icon mt">
                             <Link to="/Login"  className="coloring" > 
-                            <i class="fas fa-user badge-icon"><h5 class="symbol">13</h5></i>
+                            <i class="fas fa-user badge-icon"></i>
                             <div className="nav-icon-text">Login</div>
                             </Link>
                         </div>  
@@ -36,7 +41,7 @@ export const Header = () =>{
                         <div class="ecomm-icon mt">
                             <Link to="/Wishlist"  className="coloring">
                             <i class="fas fa-heart badge-icon">
-                            <h5 class="symbol">2</h5></i>
+                            <h5 class="symbol">{ counter }</h5></i>
                             <div className="nav-icon-text">Wishlist</div> 
                             </Link>
                         </div>
@@ -44,7 +49,7 @@ export const Header = () =>{
                         <div class="ecomm-icon mt">
                             <Link to="/Cart" className="coloring" >
                             <i class="fas fa-shopping-cart badge-icon">
-                            <h5 class="symbol">15</h5></i>
+                            <h5 class="symbol">{cartCounter}</h5></i>
                             <div className="nav-icon-text">Cart</div>
                             </Link>
                         </div>
