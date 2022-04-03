@@ -57,31 +57,3 @@
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
-.product-categories img{
-    height: 15rem;
-    width: 15rem;
-    opacity: 0.7;
-}
-.men-product,.women-product,.kid-product{
-    display: flex;
-    justify-content: space-around;
-    position: relative;
-}
-.shoe-category{
-    position: relative;
-}
-.category-text{
-    font-size: 1.5rem;
-    font-weight: 500;
-    position: absolute;
-}
-.product-categories img:hover{
-    cursor: pointer;
-}
-.category-text:hover{
-    cursor: pointer;
-}
-.shop-button:hover{
-    color: var(--ecomm-color-secondary);
-    background-color: var( --ecomm-color-primary);
-}
