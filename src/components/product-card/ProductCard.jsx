@@ -30,6 +30,7 @@ export const ProductCard = ({ brand, title, discountedPrice, actualPrice, discou
                 </span>
                 <span className="earlier-price">₹{actualPrice}</span>
                 <span className="price-off">{discountoff}</span>
+                <span className="product-rating">5<i class=" fas fa-solid fa-star"></i></span>
             </div>
             <div className="footer-button">
                 <button className="primary-button" onClick={cartHandler}>Add to cart</button>
