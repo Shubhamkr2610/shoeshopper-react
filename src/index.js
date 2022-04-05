@@ -5,6 +5,7 @@ import App from "./App";
 import { BrowserRouter } from "react-router-dom";
 import { makeServer } from "./server";
 import { HeaderProvider } from "context/HeaderContext";
+import { ProductProvider } from "context/ProductContext";
 
 // Call make Server
 makeServer();
@@ -12,7 +13,9 @@ makeServer();
 ReactDOM.render (
     <BrowserRouter>
           <HeaderProvider>
-               <App/>
+                <ProductProvider>
+                  <App/>
+                </ProductProvider>
           </HeaderProvider>
     </BrowserRouter>
    , document.getElementById("root")
