@@ -1,6 +1,6 @@
 import React from 'react'
 import "./cart.css"
-import { cartimg1, cartimg2 } from 'asset';
+import { sport1, sport2 } from 'asset';
 export const Cart = () => {
   return (
     <>
@@ -12,7 +12,7 @@ export const Cart = () => {
 
                 <div class="card-horizontal-container">
                     <div class="horizonal-image">
-                        <img src={cartimg1} alt="shoe image" class="card-horizontal-img" />
+                        <img src={ sport1 } alt="shoe image" class="card-horizontal-img" />
                     </div>
 
                     <div class="horizontal-description">
@@ -36,7 +36,7 @@ export const Cart = () => {
 
                 <div class="card-horizontal-container">
                     <div class="horizonal-image">
-                        <img src={cartimg2} alt="shoe image" class="card-horizontal-img" />
+                        <img src={sport2} alt="shoe image" class="card-horizontal-img" />
                     </div>
 
                     <div class="horizontal-description">

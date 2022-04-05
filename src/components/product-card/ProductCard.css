@@ -20,3 +20,9 @@
     justify-content: space-between;
     justify-items: center;
 }
+.product-rating{
+    border: 1px solid ;
+    border-radius: 10%;
+    background-color: var( --ecomm-color-border);
+    color: var( --ecomm-color-secondary);
+}

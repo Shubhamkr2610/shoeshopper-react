@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 import "./ProductCard.css"
 
 
-export const ProductCard = ({ brand, title, discountedPrice, actualPrice, discountoff, srcimg }) => {
+export const ProductCard = ({ brand, title, discountedPrice, actualPrice, discountoff, srcimg, rating }) => {
     const { setCounter , setCartCounter} = useHeader()
     const [wishlistColor , setWishlistColor] = useState("")
 
@@ -30,6 +30,7 @@ export const ProductCard = ({ brand, title, discountedPrice, actualPrice, discou
                 </span>
                 <span className="earlier-price">₹{actualPrice}</span>
                 <span className="price-off">{discountoff}</span>
+                <span className="product-rating">{rating}<i class=" fas fa-solid fa-star"></i></span>
             </div>
             <div className="footer-button">
                 <button className="primary-button" onClick={cartHandler}>Add to cart</button>

@@ -1,6 +1,6 @@
 import React from 'react'
 import "./wishlist.css"
-import { wishlistimg1 } from 'asset'
+import { casual4, } from 'asset'
 
 export const Wishlist = () => {
   return (
@@ -13,7 +13,7 @@ export const Wishlist = () => {
                 <span class="status-badge">In stock</span>
                 <span class="badge-dismiss"> <i class="fa fa-heart" aria-hidden="true"></i></span>
             </div>
-            <img src={wishlistimg1 } alt="shoe image" class="card-vertical-img" />
+            <img src={ casual4} alt="shoe image" class="card-vertical-img" />
             <h1 class="card-head">Nike airforce </h1>
             <p class="card-text">Designed by Bruce Kilgore and introduced in 1982</p>
             <div class="card-vertical-footer">
@@ -35,7 +35,7 @@ export const Wishlist = () => {
                 <span class="status-badge">In stock</span>
                 <span class="badge-dismiss"> <i class="fa fa-heart" aria-hidden="true"></i></span>
             </div>
-            <img src={wishlistimg1} alt="shoe image" class="card-vertical-img" />
+            <img src={casual4} alt="shoe image" class="card-vertical-img" />
             <h1 class="card-head">Nike airforce </h1>
             <p class="card-text">Designed by Bruce Kilgore and introduced in 1982</p>
             <div class="card-vertical-footer">
@@ -56,7 +56,7 @@ export const Wishlist = () => {
                 <span class="status-badge">In stock</span>
                 <span class="badge-dismiss"> <i class="fa fa-heart" aria-hidden="true"></i></span>
             </div>
-            <img src={wishlistimg1} alt="shoe image" class="card-vertical-img" />
+            <img src={casual4} alt="shoe image" class="card-vertical-img" />
             <h1 class="card-head">Nike airforce </h1>
             <p class="card-text">Designed by Bruce Kilgore and introduced in 1982</p>
             <div class="card-vertical-footer">
