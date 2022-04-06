@@ -25,7 +25,7 @@ const LoginProvider = ({ children }) => {
 
     } 
     catch (error) {
-        console.log("error")
+       
     }
   }
 
