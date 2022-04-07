@@ -5,7 +5,7 @@ import "./ProductCard.css"
 
 export const ProductCard = ({ _id,brand, title, discountedPrice, actualPrice, discountoff, srcimg, rating }) => {
     
-    const { wishlist, addToWishList, removeFromWishList } = useWishList()
+    const { wishlist, addToWishList, removeFromWishList, addToCart } = useWishList()
 
     return (
         <div className="card-vertical">
@@ -25,7 +25,7 @@ export const ProductCard = ({ _id,brand, title, discountedPrice, actualPrice, di
                 <span className="product-rating">{rating}<i class=" fas fa-solid fa-star"></i></span>
             </div>
             <div className="footer-button">
-                <button className="primary-button" >Add to cart</button>
+                <button className="primary-button" onClick={() => addToCart({ _id,brand, title, discountedPrice, actualPrice, discountoff, srcimg, rating }) } >Add to cart</button>
             </div>
         </div>
     )
