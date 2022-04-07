@@ -1,83 +1,50 @@
+import { CartCard } from 'components/cart-card/CartCard';
+import { useWishList } from 'context/WishListContext';
 import React from 'react'
 import "./cart.css"
-import { sport1, sport2 } from 'asset';
+
 export const Cart = () => {
+
+    const {cartItem} = useWishList();
+
   return (
     <>
-    <p class="ecomm-cart-title"> Your Cart</p>
-     <main class="cart-page-container">
-        <div class="ecomm-card-container" >
+    <div className='cart-wrapper'>
+    {cartItem.length === 0 ? <p className="ecomm-cart-title">Your cart is empty</p>: 
+    <>
+    <p className="ecomm-cart-title"> Your Cart</p>
+     <main className="cart-page-container">
+        <div className="ecomm-card-container" >
 
-            <div class="card-horizontal">
-
-                <div class="card-horizontal-container">
-                    <div class="horizonal-image">
-                        <img src={ sport1 } alt="shoe image" class="card-horizontal-img" />
-                    </div>
-
-                    <div class="horizontal-description">
-                        <h1 class="card-head">Nike airforce </h1>
-                        <p class="card-text">Designed by Bruce Kilgore and introduced in 1982. </p>
-                        <div class="card-vertical-footer">
-                            <span class="current-price">
-                                <strong>₹500</strong>
-                            </span>
-                            <span class="earlier-price">₹2000</span>
-                            <span class="price-off">(75% off)</span>
-                        </div>
-                        <button class="primary-button horizontal-button"> Remove from cart</button>
-                        <button class="primary-button horizontal-button ">Move to wishlist</button>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="card-horizontal">
-
-                <div class="card-horizontal-container">
-                    <div class="horizonal-image">
-                        <img src={sport2} alt="shoe image" class="card-horizontal-img" />
-                    </div>
-
-                    <div class="horizontal-description">
-                        <h1 class="card-head">Nike airforce </h1>
-                        <p class="card-text">Designed by Bruce Kilgore and introduced in 1982. </p>
-                        <div class="card-vertical-footer">
-                            <span class="current-price">
-                                <strong>₹500</strong>
-                            </span>
-                            <span class="earlier-price">₹2000</span>
-                            <span class="price-off">(75% off)</span>
-                        </div>
-                        <button class="primary-button horizontal-button"> Remove from cart</button>
-                        <button class="primary-button horizontal-button ">Move to wishlist</button>
-                    </div>
-                </div>
-            </div>
+        {cartItem.map(({ _id,brand, title, discountedPrice, actualPrice, discountoff, srcimg, rating}) => (<CartCard key={_id} 
+                    _id = {_id} brand = {brand } title = {title } discountedPrice = { discountedPrice } actualPrice = {actualPrice} discountoff = {discountoff}  srcimg ={srcimg} rating={rating} />))}
 
         </div>
+    
             {/* <!----------------cart price section---------------------> */}
-        <section class="price-checkout-container">
+        <section className="price-checkout-container">
             <div>
-                <section class="cart-price-container">
-                    <p class="cart-price-heading">PRICE DETAILS </p>
-                    <p class="cart-product-price">Price(2 items) <span>	
+                <section className="cart-price-container">
+                    <p className="cart-price-heading">PRICE DETAILS </p>
+                    <p className="cart-product-price">Price(2 items) <span>	
                         &#8377;8000</span></p>
-                    <p class="cart-product-price">Discount <span>-	
+                    <p className="cart-product-price">Discount <span>-	
                         &#8377;7000</span></p>
-                    <p class="cart-product-price">Delivery charges <span>	
+                    <p className="cart-product-price">Delivery charges <span>	
                         &#8377;100</span></p>
-                    <p class="cart-price-heading" id="price-border-top">TOTAL AMOUNT <span>	
+                    <p className="cart-price-heading" id="price-border-top">TOTAL AMOUNT <span>	
                         &#8377;1100</span></p>
-                    <p class="cart-product-price" id="product-price-sm">YOU WILL SAVE 	
+                    <p className="cart-product-price" id="product-price-sm">YOU WILL SAVE 	
                         &#8377;7000 ON THIS ORDER</p>
-                    <button class="place-order-button">PLACE ORDER</button>
+                    <button className="place-order-button">PLACE ORDER</button>
                 </section>
             </div>
         </section>
-
-    </main>
     
+    </main>
+    </>
+    }
+    </div>
     </>
   );
 }

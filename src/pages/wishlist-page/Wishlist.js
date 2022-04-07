@@ -15,8 +15,7 @@ export const Wishlist = () => {
 
                     {wishlist.map(({ _id,brand, title, discountedPrice, actualPrice, discountoff, srcimg, rating}) => (<ProductCard
                     _id = {_id} brand = {brand } title = {title } discountedPrice = { discountedPrice } actualPrice = {actualPrice} discountoff = {discountoff}  srcimg ={srcimg} rating={rating} />))}
-                    
-                
+
                 </div>
             </>
             }
