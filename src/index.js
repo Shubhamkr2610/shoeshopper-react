@@ -7,19 +7,22 @@ import { makeServer } from "./server";
 import { HeaderProvider } from "context/HeaderContext";
 import { ProductProvider } from "context/ProductContext";
 import { LoginProvider } from "context/LoginContext";
+import { WishListProvider } from "context/WishListContext";
 
 // Call make Server
 makeServer();
 
 ReactDOM.render (
     <BrowserRouter>
-      <LoginProvider>
-            <HeaderProvider>
-                  <ProductProvider>
-                        <App/>
-                  </ProductProvider>
-            </HeaderProvider>
-      </LoginProvider>
+    <WishListProvider>
+            <LoginProvider>
+                  <HeaderProvider>
+                        <ProductProvider>
+                              <App/>
+                        </ProductProvider>
+                  </HeaderProvider>
+            </LoginProvider>
+      </WishListProvider>
     </BrowserRouter>
    , document.getElementById("root")
 )
