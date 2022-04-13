@@ -2,8 +2,14 @@ import { useWishList } from 'context/WishListContext'
 import React from 'react'
 import './CartCard.css'
 
-export const CartCard = ({ _id,brand, title, discountedPrice, actualPrice, discountoff, srcimg, rating}) => {
-    const { addToWishList , wishlist, removeFromCart} = useWishList();
+export const CartCard = ({ _id,brand, title, discountedPrice, actualPrice, discountoff, srcimg, rating, quantity}) => {
+    const { addToWishList , wishlist, removeFromCart, increaseQuantity, decreaseQuantity} = useWishList();
+
+    const moveToWishListHandler = () => { 
+        addToWishList({ _id,brand, title, discountedPrice, actualPrice, discountoff, srcimg, rating })
+            removeFromCart(_id)
+
+    }
 
   return (
     <>
@@ -24,8 +30,13 @@ export const CartCard = ({ _id,brand, title, discountedPrice, actualPrice, disco
                         <span className="earlier-price">₹{actualPrice}</span>
                         <span className="price-off">{(discountoff)}</span>
                     </div>
+                    <div className="item-quantity">
+                        <button onClick={ () => decreaseQuantity(_id) }>-</button>
+                        <p>{quantity}</p>
+                        <button onClick={ () => increaseQuantity(_id) }>+</button>
+                    </div>
                     <button className="primary-button horizontal-button" onClick={ () => removeFromCart(_id) } > Remove from cart</button>
-                    { wishlist.some((item) => item._id === _id )} <button className="primary-button horizontal-button " onClick={ () => addToWishList({_id,brand, title, discountedPrice, actualPrice, discountoff, srcimg, rating})} >Move to wishlist</button>
+                    <button className="primary-button horizontal-button " onClick={ moveToWishListHandler} >Move to wishlist</button>
                 </div>
             </div>
         </div>
