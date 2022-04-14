@@ -14,10 +14,14 @@ export const ProductPage = () => {
             Sports: false,
             Casual: false,
             Formal: false,
+            Nike: false,
+            Bata: false,
+            WoodLand: false,
+            ShreeLeather: false,
             
         });
 
-        const categoryFilteredProduct = categoryFiltered( product, state);
+        const categoryFilteredProduct = categoryFiltered( product, state, state.sortBy);
         
         const PriceWishFilter = getPriceWishFilter( categoryFilteredProduct, state.sortBy
           );
@@ -32,7 +36,10 @@ export const ProductPage = () => {
                 <div className='product-wrapper'>
                    
                    {PriceWishFilter.map(item=><ProductCard key={item._id} title={item.title} brand={item.brand} discountedPrice={item.discountedPrice} actualPrice={item.actualPrice} discountoff={item.discountoff} srcimg={item.srcimg} rating= {item.rating} />)}
-                   
+
+
+                   {/* {categoryFilteredProduct.map(item=><ProductCard key={item._id} title={item.title} brand={item.brand} discountedPrice={item.discountedPrice} actualPrice={item.actualPrice} discountoff={item.discountoff} srcimg={item.srcimg} rating= {item.rating} />)}
+                    */}
                 </div>
             </main>
         </>

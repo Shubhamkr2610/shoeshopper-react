@@ -18,6 +18,16 @@ export const reducer = (state , action) => {
         case "FORMAL_SHOE":
             return { ...state, Formal: !state.Formal};
 
+       // reducing filter by brand of products
+        case "NIKE_BRAND":
+            return { ...state, Nike: !state.Nike};
+        case "BATA_BRAND":
+            return { ...state, Bata: !state.Bata};
+        case "WOODLAND_BRAND":
+            return { ...state, WoodLand: !state.WoodLand};
+        case "SHREELEATHER_BRAND":
+            return { ...state, ShreeLeather: !state.ShreeLeather};
+     
         default: 
             return state;
     }
