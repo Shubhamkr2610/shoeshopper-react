@@ -3,9 +3,14 @@ import { createContext, useContext,  useEffect,  useState } from "react";
 const WishListContext = createContext(null);
 
 const WishListProvider = ({children}) => {
-    
+     //--------------------for AddToCart------------------------
+     const [cartItem , setcartItem] = useState(localStorage.getItem ("cartItem")? JSON.parse(localStorage.getItem("cartItem")):[]);
+
     //-------------------for wishlist------------------------- 
     const [ wishlist, setWishList ] = useState(localStorage.getItem ("wishlist")? JSON.parse(localStorage.getItem("wishlist")):[]);
+
+    //calculating total price for cart item
+    const [ total, setTotal ] = useState(0);
 
     //storing wishlist product in local storage 
     useEffect(()=> {
@@ -30,12 +35,8 @@ const WishListProvider = ({children}) => {
         setWishList(wishlistProducts => wishlistProducts.filter(item => item._id !== id)  )
     }
 
-    //--------------------for AddToCart------------------------
-    const [cartItem , setcartItem] = useState(JSON.parse(localStorage.getItem ("cartItem")));
+   
 
-
-    //calculating total price for cart item
-    const [ total, setTotal ] = useState(0);
 
     const calculateTotal = () => {
         let totalPrice = 0;
