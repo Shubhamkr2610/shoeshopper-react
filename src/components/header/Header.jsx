@@ -1,11 +1,11 @@
-import { useHeader } from "context/HeaderContext";
+import { useWishList  } from "context/WishListContext";
 import React from "react";
 import { Link } from 'react-router-dom'
 import "./header.css"
 
 export const Header = () =>{
 
-    const {counter, cartCounter} = useHeader()
+    const { wishlist , cartItem } = useWishList();
     
 
     return(
@@ -41,7 +41,7 @@ export const Header = () =>{
                         <div class="ecomm-icon mt">
                             <Link to="/Wishlist"  className="coloring">
                             <i class="fas fa-heart badge-icon">
-                            <h5 class="symbol">{ counter }</h5></i>
+                            <h5 class="symbol">{ wishlist.length }</h5></i>
                             <div className="nav-icon-text">Wishlist</div> 
                             </Link>
                         </div>
@@ -49,7 +49,7 @@ export const Header = () =>{
                         <div class="ecomm-icon mt">
                             <Link to="/Cart" className="coloring" >
                             <i class="fas fa-shopping-cart badge-icon">
-                            <h5 class="symbol">{cartCounter}</h5></i>
+                            <h5 class="symbol">{ cartItem.length }</h5></i>
                             <div className="nav-icon-text">Cart</div>
                             </Link>
                         </div>
