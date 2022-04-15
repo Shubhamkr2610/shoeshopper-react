@@ -30,28 +30,31 @@ export const Sidebar = ({ dispatch, state}) => {
                        
                     </div>
 
-                    <div className="category-filter">
-                        <h3>Price Range</h3>
 
-                        {/* ----------------------filter by price range ------------------- */}
-                        <div>
-                            <input type="checkbox" id="range-1000" />
-                            <label htmlFor="range-1000">1000- 1500</label>
+                    <div className="category-filter">
+                        <h3>Brand</h3>
+
+                         {/* -----------------------filter by brand -------------- */}
+
+                         <div>
+                            <input type="checkbox" className="input-checkbox" id="nike-collection" checked={state.Nike} onChange={() => dispatch({type: "NIKE_BRAND"})} />
+                            <label htmlFor="nike-collection">Nike</label>
                         </div>
-                        <div>
-                            <input type="checkbox" id="range-2000" />
-                            <label htmlFor="range-2000">1000 - 2000</label>
+                         <div>
+                            <input type="checkbox" className="input-checkbox" id="bata-collection" checked={state.Bata} onChange={() => dispatch({type: "BATA_BRAND"})} />
+                            <label htmlFor="bata-collection">Bata</label>
                         </div>
-                        <div>
-                            <input type="checkbox" id="range-4000" />
-                            <label htmlFor="range-4000">2000 - 3000</label>
+                         <div>
+                            <input type="checkbox" className="input-checkbox" id="woodland-collection" checked={state.WoodLand} onChange={() => dispatch({type: "WOODLAND_BRAND"})} />
+                            <label htmlFor="woodland-collection">Woodland</label>
                         </div>
-                        <div>
-                            <input type="checkbox" id="range-5000" />
-                            <label htmlFor="range-5000">3000 - 4000</label>
+                         <div>
+                            <input type="checkbox" className="input-checkbox" id="shreeleather-collection" checked={state.ShreeLeather} onChange={() => dispatch({type: "SHREELEATHER_BRAND"})} />
+                            <label htmlFor="shreeleather-collection">Shreeleather</label>
                         </div>
-                        
                     </div>
+
+                    
 
                     <div className="category-filter">
                         <h3>Sort By</h3>
