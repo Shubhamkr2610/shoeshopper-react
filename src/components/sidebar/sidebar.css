@@ -23,3 +23,7 @@
    display: block;
    align-items: center;
 }
+.slider{
+    margin-right: 1.5rem;
+    align-items: flex-start;
+}

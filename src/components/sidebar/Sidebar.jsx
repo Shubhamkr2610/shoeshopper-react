@@ -1,5 +1,7 @@
+import { SlideshowRounded } from '@material-ui/icons'
 import React from 'react'
 import './sidebar.css'
+import { Slider } from "@mui/material";
 
 export const Sidebar = ({ dispatch, state}) => {
     console.log(state.checked)
@@ -8,7 +10,7 @@ export const Sidebar = ({ dispatch, state}) => {
                 <aside className="ecomm-sidebar">
                     <div className="sidebar">
                         <h2>Filter</h2>
-                        <button>clear</button>
+                        <button onClick={() => dispatch({ type: "CLEAR_FILTER"})}>clear</button>
                     </div>
                     <div className="category-filter">
                         <h3>Categories</h3>
@@ -72,24 +74,26 @@ export const Sidebar = ({ dispatch, state}) => {
                     <div className="category-filter">
                         <h3>Ratings</h3>
                         {/* -------------------------filter by rating------------------------ */}
-                        <div>
-                            <input type="radio" id="rating4" />
-                            <label htmlFor="rating4">4 Star & above</label>
-                        </div>
-                        <div>
-                            <input type="radio" id="rating3" />
-                            <label htmlFor="rating3">3 Star & above</label>
-                        </div>
-                        <div>
-                            <input type="radio" id="rating2" />
-                            <label htmlFor="rating2">2 Star & above</label>
-                        </div>
-                        <div>
-                            <input type="radio" id="rating1" />
-                            <label htmlFor="rating1">1 Star & above</label>
-                        </div>
-                    </div>
+                        
+                    <div className="category-filter slider">
+                            
+                                <Slider
+                                aria-label="ratings"
+                                defaultValue={3}
+                                valueLabelDisplay="auto"
+                                marks
+                                min={1}
+                                step={1}
+                                max={5}
+                                onChange={(e) =>
+                                    dispatch({ type: "FILTER_BY_RATING", payload: e.target.value })
+                                }
+                                />
+                     </div>
+
+                    </div>      
                 </aside>
             </>
             )
 }
+

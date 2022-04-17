@@ -1,4 +1,4 @@
-export const categoryFiltered = (product,{Sports , Casual , Formal, Nike, Bata, WoodLand, ShreeLeather }) =>{
+export const categoryFiltered = (product,{Sports , Casual , Formal, Nike, Bata, WoodLand, ShreeLeather,rating }) =>{
     let categoryFilteredProduct = []; 
 
     if (Sports)
@@ -32,7 +32,9 @@ export const categoryFiltered = (product,{Sports , Casual , Formal, Nike, Bata, 
         ...categoryFilteredProduct , ...product.filter((item) => item.brand === "ShreeLeather"),
     ];
 
-
+    if(rating){
+        categoryFilteredProduct = product.filter(item=> item.rating === rating)
+      }
 
     if (categoryFilteredProduct.length === 0 ) return product;
 

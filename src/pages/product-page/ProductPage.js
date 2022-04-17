@@ -18,6 +18,7 @@ export const ProductPage = () => {
             Bata: false,
             WoodLand: false,
             ShreeLeather: false,
+            rating: 0,
             
         });
 

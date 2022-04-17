@@ -1,4 +1,5 @@
 import { createContext, useContext,  useEffect,  useState } from "react";
+import { toast } from 'react-toastify';
 
 const WishListContext = createContext(null);
 
@@ -28,22 +29,20 @@ const WishListProvider = ({children}) => {
         else{
             setWishList(prev => [...prev, { ...product, quantity: 1 } ])
         }
+        toast.success("Item added to wishlist successfully")
     }
     //using function removing product from wishlist
     const removeFromWishList = (id) => {
 
         setWishList(wishlistProducts => wishlistProducts.filter(item => item._id !== id)  )
+        toast.error("Item removed from wishlist successfully")
     }
-
-   
-
 
     const calculateTotal = () => {
         let totalPrice = 0;
         cartItem.map(cartItem => totalPrice += cartItem.discountedPrice * cartItem.quantity)
         setTotal(totalPrice);
         console.log(totalPrice)
-
     }
     useEffect(()=> {
         calculateTotal();
@@ -66,11 +65,14 @@ const WishListProvider = ({children}) => {
         else{
             setcartItem(prev => [...prev, { ...product, quantity: 1 } ])
         }
+
+        toast.success("Item adeed to cart successfully")
     }
 
     //using function removing product from cart
     const removeFromCart = (id) => {
         setcartItem(wishlistProducts => wishlistProducts.filter(item => item._id !== id)  )
+        toast.error("Item removed  from cart successfully")
     }
 
 
