@@ -99,7 +99,7 @@ Place Your Order from Cart
 
       git clone https://github.com/Shubhamkr2610/shoeshopper-react.git
 
-      cd react-Inclusive-Mart
+      cd shoeshopper-react
       
 - install dependencies (if you are using yarn then do with that)
 
@@ -120,6 +120,7 @@ Place Your Order from Cart
 <a href="https://www.instagram.com/i_subhu/"><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white"/></a>
 
 
+![shoeshop-rr (1)](https://user-images.githubusercontent.com/91511639/163735529-062b9112-86d6-4b1b-9635-15c4a4f55fac.gif)
 
 
 
