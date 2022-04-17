@@ -5,7 +5,6 @@ import { getPriceWishFilter } from 'filterFunction/sortFilter';
 import { reducer } from 'reducer/filterReducer';
 import './productPage.css'
 import { categoryFiltered } from 'filterFunction/categoryFilter';
-// import { toast } from 'react-toastify';
 
 export const ProductPage = () => {
 

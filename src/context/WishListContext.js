@@ -38,15 +38,11 @@ const WishListProvider = ({children}) => {
         toast.error("Item removed from wishlist successfully")
     }
 
-   
-
-
     const calculateTotal = () => {
         let totalPrice = 0;
         cartItem.map(cartItem => totalPrice += cartItem.discountedPrice * cartItem.quantity)
         setTotal(totalPrice);
         console.log(totalPrice)
-
     }
     useEffect(()=> {
         calculateTotal();
