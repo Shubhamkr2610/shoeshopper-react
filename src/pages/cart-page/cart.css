@@ -1,3 +1,6 @@
+.cart-wrapper{
+    min-height: 65vh;
+}
 .ecomm-cart-title{
     margin-top: 1rem;
     width: 100%;
