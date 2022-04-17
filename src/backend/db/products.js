@@ -15,7 +15,7 @@ export const products = [
     discountedPrice: 500, 
     actualPrice: 2000,
     discountoff:"(75% off)",
-    rating: 2.5,
+    rating: 2,
     srcimg : sport1,
   },
  
@@ -27,7 +27,7 @@ export const products = [
     discountedPrice: 1000, 
     actualPrice: 2000,
     discountoff:"(50% off)",
-    rating: 3.5,
+    rating: 3,
     srcimg : sport2,
   },
  
@@ -39,7 +39,7 @@ export const products = [
     discountedPrice: 1500, 
     actualPrice: 2000,
     discountoff:"(25% off)",
-    rating: 4.5 ,
+    rating: 5 ,
     srcimg : sport3,
   },
  
@@ -51,7 +51,7 @@ export const products = [
     discountedPrice: 1000, 
     actualPrice: 4000,
     discountoff:"(75% off)",
-    rating: 3.5,
+    rating: 3,
     srcimg : sport4,
   },
  
@@ -87,7 +87,7 @@ export const products = [
     discountedPrice: 500, 
     actualPrice: 1000,
     discountoff:"(50% off)",
-    rating: 3.5,
+    rating: 5,
     srcimg : casual3,
   },
  
@@ -99,7 +99,7 @@ export const products = [
     discountedPrice: 750, 
     actualPrice: 1000,
     discountoff:"(25% off)",
-    rating: 4.5,
+    rating: 5,
     srcimg : casual4,
   },
  
@@ -111,7 +111,7 @@ export const products = [
     discountedPrice: 250, 
     actualPrice: 1000,
     discountoff:"(75% off)",
-    rating: 3.5,
+    rating: 4,
     srcimg : formal1,
   },
  
@@ -123,7 +123,7 @@ export const products = [
     discountedPrice: 500, 
     actualPrice: 2000,
     discountoff:"(75% off)",
-    rating: 2.5,
+    rating: 3,
     srcimg : formal2,
   },
  
@@ -134,7 +134,7 @@ export const products = [
     brand:"WoodLand" , 
     discountedPrice: 1000, 
     actualPrice: 2000,
-    rating: 4.5,
+    rating: 5,
     discountoff:"(50% off)",
     srcimg : formal3,
   },

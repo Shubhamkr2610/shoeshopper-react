@@ -5,6 +5,7 @@ import { getPriceWishFilter } from 'filterFunction/sortFilter';
 import { reducer } from 'reducer/filterReducer';
 import './productPage.css'
 import { categoryFiltered } from 'filterFunction/categoryFilter';
+// import { toast } from 'react-toastify';
 
 export const ProductPage = () => {
 
@@ -18,6 +19,7 @@ export const ProductPage = () => {
             Bata: false,
             WoodLand: false,
             ShreeLeather: false,
+            rating: 0,
             
         });
 
@@ -31,7 +33,7 @@ export const ProductPage = () => {
         <>
             <main className="main-ecomm-container">
 
-
+{/* <button onClick={()=>toast.error("check")}>button</button> */}
                 <Sidebar dispatch={dispatch} state={state}  />
                 <div className='product-wrapper'>
                    

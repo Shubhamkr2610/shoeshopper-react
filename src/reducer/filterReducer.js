@@ -27,7 +27,24 @@ export const reducer = (state , action) => {
             return { ...state, WoodLand: !state.WoodLand};
         case "SHREELEATHER_BRAND":
             return { ...state, ShreeLeather: !state.ShreeLeather};
-     
+
+        // reducing filter by rating of products
+        case "FILTER_BY_RATING":
+            return { ...state, rating: action.payload };
+        
+        case "CLEAR_FILTER":
+                return {
+                  ...state,
+                  sortBy: ""  ,
+                  Sports: false,
+                  Casual: false,
+                  Formal: false,
+                  Nike: false,
+                  Bata: false,
+                  WoodLand: false,
+                  ShreeLeather: false,
+                  rating: 0,
+                };
         default: 
             return state;
     }
