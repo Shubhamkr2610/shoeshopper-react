@@ -75,16 +75,8 @@ export const Sidebar = ({ dispatch, state}) => {
                         <h3>Ratings</h3>
                         {/* -------------------------filter by rating------------------------ */}
                         
-
-                        {/* <div class="category-filter">
-                        <h3>Price Range</h3>
-                        <input type="range" />
-                    </div> */}
-
-
-
-                    <div className="category-filter">
-                                {/* <p className="filter-subtitle">Rating</p> */}
+                    <div className="category-filter slider">
+                            
                                 <Slider
                                 aria-label="ratings"
                                 defaultValue={3}
@@ -99,10 +91,7 @@ export const Sidebar = ({ dispatch, state}) => {
                                 />
                      </div>
 
-
-                    </div>
-
-                    
+                    </div>      
                 </aside>
             </>
             )

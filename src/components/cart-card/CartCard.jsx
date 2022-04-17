@@ -8,7 +8,7 @@ export const CartCard = ({ _id,brand, title, discountedPrice, actualPrice, disco
     const moveToWishListHandler = () => { 
         addToWishList({ _id,brand, title, discountedPrice, actualPrice, discountoff, srcimg, rating })
             removeFromCart(_id)
-
+   
     }
 
   return (

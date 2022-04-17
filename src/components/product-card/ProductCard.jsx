@@ -1,6 +1,8 @@
 import React  from 'react'
 import { useWishList} from 'context/WishListContext' 
 import "./ProductCard.css"
+// import { toast } from 'react-toastify';
+
 
 
 export const ProductCard = ({ _id,brand, title, discountedPrice, actualPrice, discountoff, srcimg, rating }) => {
@@ -9,6 +11,8 @@ export const ProductCard = ({ _id,brand, title, discountedPrice, actualPrice, di
 
     return (
         <div className="card-vertical">
+          {/* <button onClick={()=>toast.error("check")}>button</button> */}
+
             <div className="card-vertical-header">
                 <span className="status-badge">In stock</span>
                 <span className="badge-dismiss" > { wishlist.some((item) => item._id === _id )? (<i style={{color:"red"}} onClick={ () => removeFromWishList(_id) } className="fa fa-heart" aria-hidden="true"></i>) : ( <i onClick={() => addToWishList( { _id,brand, title, discountedPrice, actualPrice, discountoff, srcimg, rating}) } className="fa fa-heart" aria-hidden="true"></i> )} </span>

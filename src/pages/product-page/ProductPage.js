@@ -34,7 +34,6 @@ export const ProductPage = () => {
         <>
             <main className="main-ecomm-container">
 
-{/* <button onClick={()=>toast.error("check")}>button</button> */}
                 <Sidebar dispatch={dispatch} state={state}  />
                 <div className='product-wrapper'>
  
